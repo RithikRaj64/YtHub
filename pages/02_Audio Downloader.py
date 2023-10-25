@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 
-def convert_video_to_audio(link: str, path: str | None) -> None:
+def convert_video_to_audio(link: str, path: str) -> None:
     yt = YouTube(link)
 
     # Choose the audio stream with the highest quality

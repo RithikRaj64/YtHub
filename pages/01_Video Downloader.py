@@ -11,7 +11,7 @@ st.set_page_config(
 
 
 def download_custom_resolution(
-    link: str, custom_resolution: str | None, path: str | None
+    link: str, custom_resolution: str | None, path: str
 ) -> None:
     yt = YouTube(link)
 
