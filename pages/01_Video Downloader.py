@@ -10,9 +10,7 @@ st.set_page_config(
 )
 
 
-def download_custom_resolution(
-    link: str, custom_resolution: str | None, path: str
-) -> None:
+def download_custom_resolution(link: str, custom_resolution: str, path: str) -> None:
     yt = YouTube(link)
 
     # Define the desired resolution (e.g., '720p', '1080p')
@@ -47,6 +45,10 @@ link: str = st.text_input("Enter the link of the video")
 # Dropdown to select video resolution
 resolutions = ["144p", "240p", "360p", "480p", "720p", "1080p"]
 selected_resolution = st.selectbox("Select Video Resolution", resolutions)
+
+if not selected_resolution:
+    selected_resolution = "720p"
+
 
 st.write(  # type: ignore
     "Video will be downloaded in the downloads folder. If you want to change the path, please enter the path below else leave it empty."
