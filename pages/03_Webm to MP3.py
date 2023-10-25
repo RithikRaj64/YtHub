@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 
-def convert_to_mp3_and_delete_webm(path: str | None) -> None:
+def convert_to_mp3_and_delete_webm(path: str) -> None:
     if not path:
         st.error("Please enter a valid file path.")
         return
