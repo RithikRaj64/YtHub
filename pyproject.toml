@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "y2m"
+version = "0.1.0"
+description = ""
+authors = ["Rithik Raj <rithu0644@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.27.2"
+pytube = "^15.0.0"
+moviepy = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
